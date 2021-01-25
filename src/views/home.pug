@@ -1,0 +1,7 @@
+if text
+    h2 #{text}
+else
+    h1 TXT2HTML!
+    form(action="/read", method="post", enctype="multipart/form-data")
+        input(type="file", id="file", name="txtFile", required, accept=".txt")
+        input(type="submit", value="Convert")
